@@ -36,20 +36,21 @@
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
       <form>
-
-          <div>
+        <div class="group">
+          <div class="item">
+            <div class="small">
             <label for="location">Location</label>
-            <input id="location" type="text" name="location"  placeholder="Search Destination"/>
-          </div>
-          <div>
+            <input id="location" type="text" name="location"  placeholder="Search Destination" autofocus="on"/>
+          </div></div>
+          <div class="item">
             <label for="arrive">Arrive</label>
             <input id="arrive" type="date" />
           </div>
-          <div>
+          <div class="item">
             <label for="depart">Depart</label>
             <input id="depart" type="date" />
           </div>
-          <div>
+          <div class="item">
             <label for="type">Type</label>
             <select name="type" id="type" size="1">
               <option value="apartment">Apartment</option>
@@ -61,7 +62,11 @@
               <option value="yurt">Yurt</option>
             </select>
           </div>
-          <button type="submit">Submit</button>
+          </div>
+          <div class="item">
+          <button class="right" type="search">Search</button>
+          </div>
+        </div>
       </form>
 
 
@@ -97,7 +102,7 @@
       <section id="ideas">
         <h2>Ideas</h2>
       <div class="group">
-        <div class="item">
+        <div class="item starter">
         <h3>Forest retreats</h3>
         <img 
           src="images/forest-retreat.png"
